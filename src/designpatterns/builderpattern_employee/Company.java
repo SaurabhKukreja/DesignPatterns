@@ -34,5 +34,14 @@ public class Company {
     System.out.println("Employee: " + employee2.toString());
     System.out.println("Employee: " + employee3.toString());
     System.out.println("Employee: " + employee4.toString());
+
+    System.out.println("********Without Builder Pattern but Clean code*******");
+
+    Employee_ employee_1 = new Employee_()
+        .withFirstName("John")
+        .withlastName("Smith")
+        .withAge(45);
+    System.out.println("Employee: " + employee_1.toString());
+
   }
 }

@@ -4,6 +4,12 @@ public class Company {
 
   public static void main(String[] args) {
 
+    // In this Company example we are using 3 different implementation to do the same thing.
+    // 1. _Employee class creates new employees in company without using builder pattern
+    // 2. Employee class creates the employees using Builder pattern.
+    // 3. Employee_ class creates the employees without actually using the builder pattern,
+    // but referencing the concept behind it.
+
     // Lets create new _Employee in the company
     // this is without the Builder Pattern
     _Employee _employee1 = new _Employee("John", "Smith");

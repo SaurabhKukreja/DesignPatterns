@@ -1,5 +1,7 @@
 package designpatterns.singleton;
 
+import designpatterns.singleton.StaticChocoBoiler.TestClass;
+
 public class ChocolateClient {
 
   public static void main(String[] args) {
@@ -27,6 +29,11 @@ public class ChocolateClient {
     ChocolateBoilerEnum boilerEnum = ChocolateBoilerEnum.INSTANCE;
     boilerEnum.fill();
     System.out.println("++++"+boilerEnum.isEmpty());
+
+    StaticChocoBoiler.TestClass testClass = new StaticChocoBoiler.TestClass();
+    testClass.printSomething();
+    
+
   }
 
 }

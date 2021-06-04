@@ -2,21 +2,10 @@ package designpatterns.builderpattern_pizza;
 
 import designpatterns.builderpattern_pizza.Pizza.PizzaBuilder;
 
-public class GenericPizza extends PizzaBuilder {
+public class GenericPizza extends Pizza {
 
-  @Override
-  void addDough() {
-
-  }
-
-  @Override
-  void addSauce() {
-
-  }
-
-  @Override
-  void addToppings() {
-
+  public GenericPizza(PizzaBuilder pizzaBuilder) {
+    super(pizzaBuilder);
   }
 
 }

@@ -8,16 +8,16 @@ public class PizzaShop {
       Pizza hawaiinPizza = new HawaainPizza().makeAPizza().bakeAPizza();
       Pizza meatPizza = new MeatPizza().makeAPizza().bakeAPizza();
       Pizza veggiePizza = new VeggiePizza().makeAPizza().bakeAPizza();
-      Pizza genericPizza = new GenericPizza()
+      /*Pizza genericPizza = new GenericPizza()
           .addDough("Test")
           .addSauce("Test Sauce")
           .addToppings("All Veggeis minus Brocolli")
           .getPizza()
-          .bakeAPizza();
+          .bakeAPizza();*/
 
       System.out.println("Here is your Hawaiin Pizza: "+ hawaiinPizza.toString());
       System.out.println("Here is your Meat Pizza: "+ meatPizza.toString());
       System.out.println("Here is your Veggie Pizza: "+ veggiePizza.toString());
-      System.out.println("Here is your Generic Pizza: "+ genericPizza.toString());
+      //System.out.println("Here is your Generic Pizza: "+ genericPizza.toString());
     }
 }
